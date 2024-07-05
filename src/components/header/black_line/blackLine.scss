@@ -1,24 +1,54 @@
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    background-color: black;
-    height:50px;
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 50px;
 
-    font-size: 15px;
-    font-weight: 600;
-    .language{
+  font-size: 15px;
+  font-weight: 600;
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    .items {
+      display: flex;
+      flex-direction: column;
+      .vn {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5px;
-    }
-    .lg-span {
-            padding-top: 5px;
+        .lg-span {
+          padding-top: 5px;
         }
+      }
 
-    .account a{
-        color: white;
+      .menu_language {
+        position: relative;
+        display: none;
+        box-shadow: 2px 2px 2px black;
+        background-color: white;
+        width: 100px;
+        height: 50px;
+        z-index: 10;
+        border-radius: 5px;
+      }
+      a { 
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 6px;
+        
+
+        color: black;
+      }
     }
+  }
+  .account a {
+    color: white;
+  }
 }

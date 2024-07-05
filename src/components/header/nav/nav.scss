@@ -28,8 +28,10 @@ nav {
         height: 70px;
       }
 
-      .btn_sub_menu:hover .sub_menu {
+      .btn_sub_menu:hover .sub_menu, .sub_menu:hover {
         display: block;
+        opacity: 1; // Hiện menu con
+        transform: translateY(0); // Dịch chuyển lên vị trí ban đầu
       }
 
       span {
@@ -51,6 +53,11 @@ nav {
     margin-top: 390px;
     z-index: 1;
     left: 0;
+    border-radius: 15px;
+
+    opacity: 0; // Bắt đầu với độ mờ
+    transform: translateY(20px); // Bắt đầu với dịch chuyển xuống
+    transition: opacity 0.5s ease, transform 0.5s ease; // Hiệu ứng chuyển đổi
 
     background-color: white;
 
@@ -71,7 +78,7 @@ nav {
           justify-content: flex-start;
         }
       }
-      img{
+      img {
         width: 250px;
         margin-left: 150px;
         overflow: hidden;
