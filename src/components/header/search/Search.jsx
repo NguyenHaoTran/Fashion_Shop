@@ -1,7 +1,16 @@
 import "./search.scss";
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
-function Search() {
-  return <div>Search</div>;
+
+
+const Search = () => {
+  return (
+    <div>
+      <a href="#">
+        <SearchOutlinedIcon/>
+      </a>
+    </div>
+  )
 }
 
-export default Search;
+export default Search

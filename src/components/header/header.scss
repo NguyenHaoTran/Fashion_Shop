@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    .tool{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+    }
+}

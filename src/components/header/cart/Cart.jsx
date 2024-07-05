@@ -1,7 +1,15 @@
 import "./cart.scss";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-function Cart() {
-  return <div>Cart</div>;
+
+const Cart = () => {
+  return (
+    <div>
+      <a href="#">
+        <ShoppingCartOutlinedIcon/>
+      </a>
+    </div>
+  )
 }
 
-export default Cart;
+export default Cart
