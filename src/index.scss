@@ -8,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+  background-color:rgb(253, 251, 248) ;
 }
 
 a {
@@ -15,10 +17,11 @@ a {
   color: black;
 }
 
+a:hover {
+  color: rgb(134, 99, 79);
+}
+
 ul{
   list-style-type: none;
 }
 
-li{
-
-}

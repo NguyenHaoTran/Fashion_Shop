@@ -1,68 +1,82 @@
-nav{
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .main_menu {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
-    .main_menu {
+    // background-color: aqua;
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 35px;
+      color: black;
+      font-weight: 500;
+      li {
         display: flex;
-        justify-content: center;
         align-items: center;
-        // background-color: aqua;
-        ul {
-            display: flex;
-            list-style-type: none;
-            gap: 35px;
-            color: black;
-            font-weight: 500;
-            li{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        justify-content: center;
+      }
 
-            .btn_sub_menu {
-                cursor: pointer;
-            }
+      .btn_sub_menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 70px;
+      }
 
-            .btn_sub_menu:hover .sub_menu {
-                display: flex;
-            }
-        
-            span{
-                padding-top: 5px;
-            }
+      .btn_sub_menu:hover .sub_menu {
+        display: block;
+      }
 
-            a{
-                display: flex;
-                align-items: center;
-            }
-         }   
+      span {
+        padding-top: 5px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+      }
     }
+  }
 
-    .sub_menu {
-        display: none;
-        position: absolute;
-        margin-top: 260px;
-        width: 100%;
-        gap: 50px;
-        z-index: 1;
+  .sub_menu {
+    display: none;
+    position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 390px;
+    z-index: 1;
+    left: 0;
 
-        background-color: bisque;
-        
-        justify-content: center;
-        align-items: center;
-        ul {
-            margin-top: 40px;
-            h5{
-                font-size: 15px;
-            }
-    
-            li{
-                margin-top: 10px;
-            }
+    background-color: white;
+
+    .sub_menu_items {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      align-items: center;
+      width: 100%;
+      ul {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        h5 {
+          font-size: 18px;
         }
-    } 
+        li {
+          justify-content: flex-start;
+        }
+      }
+      img{
+        width: 250px;
+        margin-left: 150px;
+        overflow: hidden;
+        border-radius: 15%;
+      }
+    }
+  }
 }
-
