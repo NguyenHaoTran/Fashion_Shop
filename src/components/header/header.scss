@@ -1,8 +1,14 @@
 header {
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    background-color: rgb(253, 251, 248);
+    z-index: 1000;
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0 1.2px 2px -2px gray;
     .tool{
         display: flex;
         justify-content: space-around;

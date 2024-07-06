@@ -1,10 +1,13 @@
 .container {
   display: flex;
+  position: fixed;
   justify-content: space-around;
   align-items: center;
   color: white;
   background-color: black;
   height: 50px;
+  width: 100%;
+  z-index: 999;
 
   font-size: 15px;
   font-weight: 600;
