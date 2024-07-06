@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .year {
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg);
+    font-size: 300px;
+    opacity: 10%;
+    margin-top: 100px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  max-width: 80%;
+  .items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .text {
+      font-size: 40px;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      padding: 20px;
+      border-radius: 30px;
+      background-color: white;
+      span {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 25px;
+  }
+}
