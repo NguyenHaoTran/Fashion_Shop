@@ -92,7 +92,7 @@ const Nav = () => {
                     </ul>
                   </div>
                   <div className="img">
-                    <img src="/1x1_menu.webp" alt="" />
+                    <img src="/1x1_menu.webp" alt="menuimg" />
                   </div>
                 </div>
               </div>

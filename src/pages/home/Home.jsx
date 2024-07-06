@@ -1,4 +1,5 @@
 import "./home.scss";
+import ProductsList from "../products/ProductsList";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import ScrollReveal from "scrollreveal";
@@ -64,7 +65,13 @@ const Home = () => {
             Bộ sưu tập mùa Xuân 2025 đa dạng mẫu mã, mua ngay nhận ưu đã lớn
           </p>
         </div>
-        <div className="home_list_products"></div>
+        <div className="home_list_products">
+            <ProductsList/>
+        </div>
+      </div>
+      {/* Home_about */}
+      <div className="home_about">
+        
       </div>
     </>
   );
