@@ -1,0 +1,42 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+
+    h5 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 70%;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+}

@@ -2,91 +2,136 @@
   {
     "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CHECK PRINT SHIRT",
-    "price": 110,
-    "id": 1
+    "price": 500000,
+    "id": 1,
+    "category": "Đồ nam",
+    "color": "xanh",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GLORIA HIGH LOGO SNEAKER",
-    "price": 91,
-    "id": 2
+    "price": 320000,
+    "id": 2,
+    "category": "Giày",
+    "color": "trắng",
+    "size": "L"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CATE RIGID BAG",
-    "price": 94.5,
-    "id": 3
+    "price": 470000,
+    "id": 3,
+    "category": "Túi",
+    "color": "đen",
+    "size": "S"
   },
   {
     "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GUESS CONNECT WATCH",
-    "price": 438.9,
-    "id": 4
+    "price": 438000,
+    "id": 4,
+    "category": "Phụ kiện",
+    "color": "xám",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "'70s RETRO GLAM KEFIAH",
-    "price": 20,
-    "id": 5
+    "price": 410000,
+    "id": 5,
+    "category": "Phụ kiện",
+    "color": "vàng",
+    "size": "S"
   },
   {
     "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CHECK PRINT SHIRT",
-    "price": 110,
-    "id": 6
+    "price": 1100000,
+    "id": 6,
+    "category": "Đồ nam",
+    "color": "xanh",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GLORIA HIGH LOGO SNEAKER",
-    "price": 91,
-    "id": 7
+    "price": 910000,
+    "id": 7,
+    "category": "Giày",
+    "color": "trắng",
+    "size": "L"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CATE RIGID BAG",
-    "price": 94.5,
-    "id": 8
+    "price": 940000,
+    "id": 8,
+    "category": "Túi",
+    "color": "đen",
+    "size": "S"
   },
   {
     "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GUESS CONNECT WATCH",
-    "price": 438.9,
-    "id": 9
+    "price": 438000,
+    "id": 9,
+    "category": "Phụ kiện",
+    "color": "xám",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "'70s RETRO GLAM KEFIAH",
-    "price": 20,
-    "id": 10
+    "price": 2000000,
+    "id": 10,
+    "category": "Phụ kiện",
+    "color": "vàng",
+    "size": "S"
   },
   {
     "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CHECK PRINT SHIRT",
-    "price": 110,
-    "id": 11
+    "price": 1100000,
+    "id": 11,
+    "category": "Đồ nam",
+    "color": "xanh",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GLORIA HIGH LOGO SNEAKER",
-    "price": 91,
-    "id": 12
+    "price": 910000,
+    "id": 12,
+    "category": "Giày",
+    "color": "trắng",
+    "size": "L"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "CATE RIGID BAG",
-    "price": 94.5,
-    "id": 13
+    "price": 940000,
+    "id": 13,
+    "category": "Túi",
+    "color": "đen",
+    "size": "S"
   },
   {
     "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "GUESS CONNECT WATCH",
-    "price": 438.9,
-    "id": 14
+    "price": 438000,
+    "id": 14,
+    "category": "Phụ kiện",
+    "color": "xám",
+    "size": "M"
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     "name": "'70s RETRO GLAM KEFIAH",
-    "price": 20,
-    "id": 15
+    "price": 200000,
+    "id": 15,
+    "category": "Phụ kiện",
+    "color": "vàng",
+    "size": "S"
   }
 ]

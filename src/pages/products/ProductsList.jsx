@@ -1,14 +1,10 @@
+
 import "./productsList.scss";
-import Products from "../../Data/products.json";
-import Card from "./cards/Card";
-import { useEffect, useState } from "react";
+import Card from "./Card";
 
-const ProductsList = () => {
-  const [products, setProducts] = useState([]);
+const ProductsList = ({ products }) => {
 
-  useEffect(() => {
-    setProducts(Products);
-  }, []);
+  
 
   return (
     <div className="products_list">

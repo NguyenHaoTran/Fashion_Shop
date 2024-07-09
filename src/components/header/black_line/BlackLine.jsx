@@ -7,7 +7,7 @@ const BlackLine = () => {
       <div className="account">
         <a href="#">Tài khoản</a>
       </div>
-      <div className="text">
+      <div className="blackLine_text">
         <p>Chương trình giảm giá theo mùa đã bắt đầu! Giảm tới 50%! Mua ngay</p>
       </div>
       <div className="language">

@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     position: fixed;
     justify-content: space-around;
@@ -9,10 +9,20 @@ header {
     width: 100%;
     margin-top: 50px;
     box-shadow: 0 1.2px 2px -2px gray;
+    transition: transform 0.3s ease-in-out;
     .tool{
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 25px;
     }
+}
+
+// hide, show header
+.header.hide {
+    transform: translateY(-73%);
+}
+
+.header.show {
+    transform: translateY(0);
 }

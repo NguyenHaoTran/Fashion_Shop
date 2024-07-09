@@ -1,58 +1,61 @@
 .products {
-  width: 100%;
-  height: auto;
-  padding-top: 120px;
-
-  .banner {
-    background-color: rgb(233, 233, 233);
-    padding: 120px 0px 120px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .p_banner {
-      margin-top: 30px;
-      font-size: 50px;
-    }
-
-    .selection {
-      a {
-        font-size: 13px;
-        margin: 10px;
-      }
-    }
-  }
-
-  //
-
-  .products_section {
-    display: grid;
-    grid-template-columns: 30% 70%;
     width: 100%;
-    .sidebar {
-      background-color: rgb(197, 243, 228);
+    height: auto;
+    padding-top: 120px;
 
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .category{
-        width: 100%;
-      }
-    }
-    .products_view {
-      background-color: rgb(240, 184, 184);
+    .banner {
+        background-color: rgb(233, 233, 233);
+        padding: 120px 0px 120px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      gap: 30px;  
-      .products_list{
-        width: 100%;
-        
-      }
+        .p_banner {
+            margin-top: 30px;
+            font-size: 50px;
+        }
+
+        .selection {
+            a {
+                font-size: 13px;
+                margin: 10px;
+            }
+        }
     }
-  }
+
+    .products_section {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 100%;
+
+        .sidebar {
+            background-color: rgb(197, 243, 228);
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+
+            .category {
+                width: 100%;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .products_view {
+            background-color: rgb(240, 184, 184);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+
+            .products_list {
+                width: 100%;
+            }
+        }
+    }
 }

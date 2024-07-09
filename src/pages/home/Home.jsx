@@ -1,5 +1,5 @@
 import "./home.scss";
-import ProductsList from "../products/ProductsList";
+// import ProductsList from "../products/ProductsList";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import SquareIcon from "@mui/icons-material/Square";
@@ -12,17 +12,26 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 import ScrollReveal from "scrollreveal";
 
+import { useEffect } from "react";
+
 const Home = () => {
   // ScrollReveal
-  const sr = ScrollReveal({
-    origin: "top",
-    distance: "60px",
-    duration: "1200",
-    delay: 500,
-  });
 
-  sr.reveal(`.text`, { origin: "left" });
-  sr.reveal(`.img`, { origin: "right" });
+  useEffect(() => {
+    const sr = ScrollReveal({
+      reset: true, // Đảm bảo animation sẽ luôn thực hiện khi cuộn lại
+      origin: "top",
+      distance: "50px",
+      duration: "700",
+      delay: 200,
+    });
+
+    sr.reveal(`.text`, { origin: "left", interval: 200 });
+    sr.reveal(`.imgBanner_home`, { origin: "right", interval: 200 });
+    sr.reveal(`.instagram`, { origin: "bottom", interval: 200 });
+    sr.reveal(`.note_imgs`, { origin: "top", interval: 200 });
+    sr.reveal(`.item`, { origin: "top", interval: 200 });
+  }, []);
 
   return (
     <>
@@ -41,7 +50,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="img">
+          <div className="img imgBanner_home">
             <img src="/1x1_menu.webp" />
           </div>
         </div>
@@ -73,9 +82,7 @@ const Home = () => {
             Bộ sưu tập mùa Xuân 2025 đa dạng mẫu mã, mua ngay nhận ưu đã lớn
           </p>
         </div>
-        <div className="home_list_products">
-          <ProductsList />
-        </div>
+        <div className="home_list_products">{/* <ProductsList /> */}</div>
       </div>
       {/* Home_about */}
       <div className="home_about">

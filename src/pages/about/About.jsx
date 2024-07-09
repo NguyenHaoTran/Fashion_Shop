@@ -1,23 +1,27 @@
 import "./about.scss";
 import ScrollReveal from "scrollreveal";
 
+import { useEffect } from "react";
+
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 
 const About = () => {
   // ScrollReveal
-  const sr = ScrollReveal({
-    origin: "top",
-    distance: "60px",
-    duration: "1200",
-    delay: 500,
-  });
+  useEffect(() => {
+    const sr = ScrollReveal({
+      reset: true, // Đảm bảo animation sẽ luôn thực hiện khi cuộn lại
+      origin: "top",
+      distance: "50px",
+      duration: "700",
+      delay: 200,
+    });
 
-  sr.reveal(`.text`, { origin: "left" });
-  sr.reveal(`.img`, { origin: "right" });
-  sr.reveal(`.about_end_text`, { origin: "right" });
-  sr.reveal(`.about_end_imgs`, { origin: "left" });
-  sr.reveal(`.imgs`, { origin: "left" });
-
+    sr.reveal(`.text`, { origin: "left", interval: 200 });
+    sr.reveal(`.img`, { origin: "right", interval: 200 });
+    sr.reveal(`.about_end_text`, { origin: "right", interval: 200 });
+    sr.reveal(`.about_end_imgs`, { origin: "left", interval: 200 });
+    sr.reveal(`.imgs`, { origin: "left", interval: 200 });
+  }, []);
   return (
     <div className="about">
       <div className="banner">
@@ -71,9 +75,9 @@ const About = () => {
           </p>
           <br />
           <p className="p_text">
-            * Sứ mệnh trở thành nhãn hàng dẫn đầu trong ngành <br />* Chúng tôi ứng dụng
-            các công nghệ và quy trình tiên tiến <br/>* Nâng cao chất lượng sản phẩm,
-            đẩy mạnh thương mại
+            * Sứ mệnh trở thành nhãn hàng dẫn đầu trong ngành <br />* Chúng tôi
+            ứng dụng các công nghệ và quy trình tiên tiến <br />* Nâng cao chất
+            lượng sản phẩm, đẩy mạnh thương mại
           </p>
           <button className="about_end_btn">
             MUA NGAY
