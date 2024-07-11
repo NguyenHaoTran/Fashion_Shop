@@ -91,7 +91,7 @@ const Nav = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="img">
+                  <div className="submenu_img">
                     <img src="/1x1_menu.webp" alt="menuimg" />
                   </div>
                 </div>

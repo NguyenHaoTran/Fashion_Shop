@@ -28,7 +28,8 @@ nav {
         height: 70px;
       }
 
-      .btn_sub_menu:hover .sub_menu, .sub_menu:hover {
+      .btn_sub_menu:hover .sub_menu,
+      .sub_menu:hover {
         display: block;
       }
 
@@ -42,7 +43,7 @@ nav {
       }
     }
   }
-// submenu_megamenu
+  // submenu_megamenu
   .sub_menu {
     display: none;
     position: absolute;
@@ -75,7 +76,6 @@ nav {
       img {
         width: 250px;
         margin-left: 150px;
-        overflow: hidden;
         border-radius: 15%;
         background-color: aqua;
       }

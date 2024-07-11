@@ -19,7 +19,7 @@ const About = () => {
     sr.reveal(`.text`, { origin: "left", interval: 200 });
     sr.reveal(`.img`, { origin: "right", interval: 200 });
     sr.reveal(`.about_end_text`, { origin: "right", interval: 200 });
-    sr.reveal(`.about_end_imgs`, { origin: "left", interval: 200 });
+    sr.reveal(`.about_end_imgs`, { origin: "left", interval: 200, reset: false });
     sr.reveal(`.imgs`, { origin: "left", interval: 200 });
   }, []);
   return (
