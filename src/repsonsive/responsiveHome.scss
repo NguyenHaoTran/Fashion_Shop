@@ -16,7 +16,10 @@
 
         .items {
             .text {
-                font-size: 30px;
+                font-size: 15px;
+                h1{
+                    font-size: 50px;
+                }
             }
 
             button {
@@ -31,15 +34,23 @@
         }
 
         img {
+            padding-top: 30px;
             width: 100%;
             border-radius: 15px;
         }
     }
+    
 
     .home_products {
         .home_title {
+            text-align: center;
             h5 {
-                font-size: 40px;
+                font-size: 20px;
+                
+            }
+            p{
+                font-size: 17px;
+                text-align: center;
             }
         }
     }
@@ -47,7 +58,7 @@
     .home_about {
         .title {
             h5 {
-                font-size: 35px;
+                font-size: 25px;
             }
         }
 
