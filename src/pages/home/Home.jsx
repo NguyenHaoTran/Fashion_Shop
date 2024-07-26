@@ -82,7 +82,7 @@ const Home = () => {
             Bộ sưu tập mùa Xuân 2025 đa dạng mẫu mã, mua ngay nhận ưu đã lớn
           </p>
         </div>
-        <div className="home_list_products">{/* <ProductsList /> */}</div>
+        {/* <div className="home_list_products"><ProductsList products={filteredProducts}/></div> */}
       </div>
       {/* Home_about */}
       <div className="home_about">
