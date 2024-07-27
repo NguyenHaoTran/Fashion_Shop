@@ -138,7 +138,7 @@ const Home = () => {
           <div className="note">
             <p>
               TÔI LUÔN LUÔN TÌM THẤY VẺ ĐẸP TRONG NHỮNG THỨ KỲ LẠ VÀ KHÔNG HOÀN
-              HẢO. CHÚNG LUON THÚ VỊ HƠN NHIỀU
+              HẢO. CHÚNG LUÔN THÚ VỊ HƠN NHIỀU
             </p>
           </div>
           <div className="CEO_name">NGUYỄN HÙNG</div>
