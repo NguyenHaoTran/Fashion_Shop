@@ -90,6 +90,7 @@ export const News = () => {
           </div>
           <div className="newBlog">
             <h3>BÀI VIẾT MỚI NHẤT</h3>
+            {/* items */}
             <div className="item">
               <div className="imgs">
                 <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
@@ -101,6 +102,63 @@ export const News = () => {
                 </b>
               </div>
             </div>
+            {/* temp items */}
+            <div className="item">
+              <div className="imgs">
+                <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
+              </div>
+              <div className="texts">
+                <p className="date_time">21/11/2024</p>
+                <b>
+                  Express Yourself Through Fashion: Finding Your Signature Style
+                </b>
+              </div>
+            </div>
+            <div className="item">
+              <div className="imgs">
+                <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
+              </div>
+              <div className="texts">
+                <p className="date_time">21/11/2024</p>
+                <b>
+                  Express Yourself Through Fashion: Finding Your Signature Style
+                </b>
+              </div>
+            </div>
+            <div className="item">
+              <div className="imgs">
+                <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
+              </div>
+              <div className="texts">
+                <p className="date_time">21/11/2024</p>
+                <b>
+                  Express Yourself Through Fashion: Finding Your Signature Style
+                </b>
+              </div>
+            </div>
+            <div className="item">
+              <div className="imgs">
+                <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
+              </div>
+              <div className="texts">
+                <p className="date_time">21/11/2024</p>
+                <b>
+                  Express Yourself Through Fashion: Finding Your Signature Style
+                </b>
+              </div>
+            </div>
+            <div className="item">
+              <div className="imgs">
+                <img src="../public/imgs/blog-009.jpg" alt="itemImg" />
+              </div>
+              <div className="texts">
+                <p className="date_time">21/11/2024</p>
+                <b>
+                  Express Yourself Through Fashion: Finding Your Signature Style
+                </b>
+              </div>
+            </div>
+            {/*  */}
           </div>
         </div>
       </div>
