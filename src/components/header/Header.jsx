@@ -1,6 +1,6 @@
 import "./header.scss";
 import Nav from "./nav/Nav";
-import Search from "./search/Search";
+import Search from "./search/Search"; // Import Search component instead of SearchModal
 import Cart from "./cart/Cart";
 
 import { useState, useEffect } from "react";
@@ -11,13 +11,12 @@ import BlackLine from "./black_line/BlackLine";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+  const [isSearchVisible, setSearchVisible] = useState(false); // Updated state name
 
   const controlHeader = () => {
     if (window.scrollY > lastScrollY) {
-      // Khi cuộn xuống, ẩn header
       setShowHeader(false);
     } else {
-      // Khi cuộn lên, hiện header
       setShowHeader(true);
     }
     setLastScrollY(window.scrollY);
@@ -30,6 +29,9 @@ const Header = () => {
     };
   }, [lastScrollY]);
 
+  const openSearch = () => setSearchVisible(true);
+  const closeSearch = () => setSearchVisible(false);
+
   return (
     <>
       <BlackLine />
@@ -37,11 +39,14 @@ const Header = () => {
         <div className="logo">LOGO</div>
         <Nav />
         <div className="tool">
-          <Search />
+          <button className="search-btn" onClick={openSearch}>
+            <Search />
+          </button>
           <Wishlist />
           <Cart />
         </div>
       </header>
+      <Search isVisible={isSearchVisible} onClose={closeSearch} />
     </>
   );
 };

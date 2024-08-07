@@ -1,6 +1,23 @@
 import "./contact.scss";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 const Contact = () => {
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      reset: true, // Đảm bảo animation sẽ luôn thực hiện khi cuộn lại
+      origin: "top",
+      distance: "50px",
+      duration: "700",
+      delay: 200,
+    });
+
+    sr.reveal(`.texts`, { origin: "left", interval: 200 });
+    sr.reveal(`.img`, { origin: "right", interval: 200 });
+    sr.reveal(`.diaChi`, { origin: "bottom", interval: 200 });
+  }, []);
+
   return (
     <div className="Contact_Main">
       <div className="contact">
