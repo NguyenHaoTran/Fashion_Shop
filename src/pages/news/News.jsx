@@ -66,7 +66,7 @@ export const News = () => {
                 </div>
               </div>
             ))}
-          {/*  */}
+            {/*  */}
           </div>
         </div>
       </div>
