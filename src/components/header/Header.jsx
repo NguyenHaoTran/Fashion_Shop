@@ -3,6 +3,8 @@ import Nav from "./nav/Nav";
 import Search from "./search/Search"; // Import Search component instead of SearchModal
 import Cart from "./cart/Cart";
 
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+
 import { useState, useEffect } from "react";
 
 import Wishlist from "../../pages/wishlist/Wishlist";
@@ -40,6 +42,7 @@ const Header = () => {
         <Nav />
         <div className="tool">
           <button className="search-btn" onClick={openSearch}>
+            <SearchOutlinedIcon className="search-icon" />
             <Search />
           </button>
           <Wishlist />
