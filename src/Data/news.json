@@ -3,32 +3,36 @@
     "imgUrl": "http://monna.monamedia.net/wp-content/uploads/2023/11/blog-009.jpg",
     "name": "Express Yourself Through Fashion: Finding Your Signature Style",
     "id": 1,
-    "description": "Movie production involve many different aspect, such spatial planning, materials selection, construction techniques, and environmental considerations. Architects must consider the practical requirements of a building, such as its intended use, structural integrity, and safety, as well as its aesthetic qualities, such as form, color, and texture.",
+    "description": "Movie production involve many different aspect...",
     "content": "",
-    "Date": "21/11/2024"
+    "Date": "21/11/2024",
+    "category": "Fashion"
   },
   {
     "imgUrl": "http://monna.monamedia.net/wp-content/uploads/2023/11/blog-008.jpg",
     "name": "From Runway to Realway: How to Rock High Fashion in Everyday Life",
     "id": 2,
-    "description": "Movie production involve many different aspect, such spatial planning, materials selection, construction techniques, and environmental considerations. Architects must consider the practical requirements of a building, such as its intended use, structural integrity, and safety, as well as its aesthetic qualities, such as form, color, and texture.",
+    "description": "Movie production involve many different aspect...",
     "content": "",
-    "Date": "1/12/2024"
+    "Date": "1/12/2024",
+    "category": "Life Style"
   },
   {
     "imgUrl": "http://monna.monamedia.net/wp-content/uploads/2023/11/blog-006.jpg",
     "name": "Chic and Sustainable: Fashion Choices for a Greener Future",
     "id": 3,
-    "description": "Movie production involve many different aspect, such spatial planning, materials selection, construction techniques, and environmental considerations. Architects must consider the practical requirements of a building, such as its intended use, structural integrity, and safety, as well as its aesthetic qualities, such as form, color, and texture.",
+    "description": "Movie production involve many different aspect...",
     "content": "",
-    "Date": "11/8/2024"
+    "Date": "11/8/2024",
+    "category": "Fashion"
   },
   {
     "imgUrl": "http://monna.monamedia.net/wp-content/uploads/2023/11/blog-005.jpg",
     "name": "Fashion Forward: Exploring the Hottest Trends of the Season",
     "id": 4,
-    "description": "Movie production involve many different aspect, such spatial planning, materials selection, construction techniques, and environmental considerations. Architects must consider the practical requirements of a building, such as its intended use, structural integrity, and safety, as well as its aesthetic qualities, such as form, color, and texture.",
+    "description": "Movie production involve many different aspect...",
     "content": "",
-    "Date": "12/11/2024"
+    "Date": "12/11/2024",
+    "category": "Trending"
   }
-]  
+]

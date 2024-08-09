@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export const News = () => {
   const [newsData, setNewsData] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null); // State để lưu trữ danh mục được chọn
 
   useEffect(() => {
     // Fetch data from the JSON file
@@ -11,6 +12,18 @@ export const News = () => {
       .then((data) => setNewsData(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
+  // dành cho phần filter ở category nếu cần ( dành cho "bài viết mới nhất")
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    // Thực hiện các thao tác xử lý dữ liệu hoặc UI khác tại đây
+  };
+
+
+  // Hàm xử lý khi chọn danh mục
+  const filteredNewsData = selectedCategory
+    ? newsData.filter((item) => item.category === selectedCategory)
+    : newsData;
 
   return (
     <div className="News">
@@ -26,7 +39,7 @@ export const News = () => {
         {/* content_Items */}
         <div className="contents">
           {/* item */}
-          {newsData.map((item) => (
+          {filteredNewsData.map((item) => (
             <div key={item.id} className="news-item">
               <img src={item.imgUrl} alt={item.name} />
               <h3>{item.name}</h3>
@@ -44,28 +57,60 @@ export const News = () => {
           <div className="searchBar"></div>
           <div className="category">
             <h3>CHUYÊN MỤC</h3>
-            <ul>
-              <li>Fashion</li>
-              <li>Life Style</li>
-              <li>News</li>
-              <li>Travel</li>
-              <li>Trending</li>
-            </ul>
+            <div className="filterButtons">
+              <button
+                className={selectedCategory === null ? "active" : ""}
+                onClick={() => handleCategorySelect(null)}
+              >
+                Tất cả
+              </button>
+              <button
+                className={selectedCategory === "Fashion" ? "active" : ""}
+                onClick={() => handleCategorySelect("Fashion")}
+              >
+                Fashion
+              </button>
+              <button
+                className={selectedCategory === "Life Style" ? "active" : ""}
+                onClick={() => handleCategorySelect("Life Style")}
+              >
+                Life Style
+              </button>
+              <button
+                className={selectedCategory === "News" ? "active" : ""}
+                onClick={() => handleCategorySelect("News")}
+              >
+                News
+              </button>
+              <button
+                className={selectedCategory === "Travel" ? "active" : ""}
+                onClick={() => handleCategorySelect("Travel")}
+              >
+                Travel
+              </button>
+              <button
+                className={selectedCategory === "Trending" ? "active" : ""}
+                onClick={() => handleCategorySelect("Trending")}
+              >
+                Trending
+              </button>
+            </div>
           </div>
           <div className="newBlog">
             <h3>BÀI VIẾT MỚI NHẤT</h3>
             {/* items */}
-            {newsData.map((item) => (
-              <div key={item.id} className="item">
-                <div className="imgs">
-                  <img src={item.imgUrl} alt="itemImg" />
+            {newsData
+              .map((item) => (
+                <div key={item.id} className="item">
+                  <div className="imgs">
+                    <img src={item.imgUrl} alt="itemImg" />
+                  </div>
+                  <div className="texts">
+                    <p className="date_time">21/11/2024</p>
+                    <b>{item.name}</b>
+                  </div>
                 </div>
-                <div className="texts">
-                  <p className="date_time">21/11/2024</p>
-                  <b>{item.name}</b>
-                </div>
-              </div>
-            ))}
+              ))}
             {/*  */}
           </div>
         </div>

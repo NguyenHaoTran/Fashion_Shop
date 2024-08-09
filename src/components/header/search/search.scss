@@ -38,6 +38,10 @@
       cursor: pointer;
       font-size: 50px;
       color: #333;
+      padding-bottom: 10px;
+      &:hover {
+        color: rgb(86, 73, 57);
+      }
     }
 
     .search-box {
