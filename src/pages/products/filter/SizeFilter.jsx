@@ -1,5 +1,4 @@
 
-
 const SizeFilter = ({ setSizeFilter }) => {
   const handleFilterClick = (event, size) => {
     event.preventDefault();
@@ -10,11 +9,11 @@ const SizeFilter = ({ setSizeFilter }) => {
     <div className="size">
       <b>KÍCH THƯỚC</b>
       <ul>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'L')}>L</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'M')}>M</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'S')}>S</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'XL')}>XL</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'XS')}>XS</a></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'L')}>L</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'M')}>M</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'S')}>S</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'XL')}>XL</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'XS')}>XS</button></li>
       </ul>
     </div>
   );

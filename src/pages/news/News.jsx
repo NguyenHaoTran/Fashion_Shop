@@ -1,4 +1,5 @@
 import "./news.scss";
+import "../../repsonsive/responsiveNews.scss"
 import { useState, useEffect } from "react";
 
 export const News = () => {

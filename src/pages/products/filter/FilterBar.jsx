@@ -8,7 +8,7 @@ const FilterBar = ({ setCategoryFilter, setPriceFilter, setColorFilter, setSizeF
   return (
     <div className="sidebar">
       <CategoryFilter setCategoryFilter={setCategoryFilter} />
-      <PriceFilter setPriceFilter={setPriceFilter} />
+      {/* <PriceFilter setPriceFilter={setPriceFilter} /> */}
       <ColorFilter setColorFilter={setColorFilter} />
       <SizeFilter setSizeFilter={setSizeFilter} />
       

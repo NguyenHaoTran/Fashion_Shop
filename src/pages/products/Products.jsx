@@ -59,13 +59,18 @@ const Products = () => {
       </div>
       <div className="products_section">
         <div className="sideBar">
-          <FilterBar
-            setCategoryFilter={setCategoryFilter}
-            setPriceFilter={setPriceFilter}
-            setColorFilter={setColorFilter}
-            setSizeFilter={setSizeFilter}
-          />
-          <button onClick={handleClearFilters}>Clear Filters</button>
+          <div className="filter_bar">
+            <FilterBar
+              setCategoryFilter={setCategoryFilter}
+              setPriceFilter={setPriceFilter}
+              setColorFilter={setColorFilter}
+              setSizeFilter={setSizeFilter}
+            />
+          </div>
+
+          <button className="btn_clear" onClick={handleClearFilters}>
+            Clear Filters
+          </button>
         </div>
 
         <div className="products_view">

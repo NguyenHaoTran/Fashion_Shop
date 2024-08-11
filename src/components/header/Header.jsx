@@ -1,4 +1,7 @@
+import "../../repsonsive/responsiveHeader.scss"
+
 import "./header.scss";
+
 import Nav from "./nav/Nav";
 import Search from "./search/Search"; // Import Search component instead of SearchModal
 import Cart from "./cart/Cart";

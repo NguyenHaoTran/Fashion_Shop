@@ -10,13 +10,13 @@ const CategoryFilter = ({ setCategoryFilter }) => {
     <div className="category">
       <b>DANH MỤC SẢN PHẨM</b>
       <ul>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Bộ sưu tập')}>Bộ sưu tập</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Chân váy')}>Chân váy</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Đồ nam')}>Đồ nam</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Đồ nữ')}>Đồ nữ</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Đầm maxi')}>Đầm maxi</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Túi')}>Túi</a></li>
-        <li><a href="/" onClick={(e) => handleFilterClick(e, 'Giày')}>Giày</a></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Bộ sưu tập')}>Bộ sưu tập</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Chân váy')}>Chân váy</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Đồ nam')}>Đồ nam</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Đồ nữ')}>Đồ nữ</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Đầm maxi')}>Đầm maxi</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Túi')}>Túi</button></li>
+        <li><button href="/" onClick={(e) => handleFilterClick(e, 'Giày')}>Giày</button></li>
       </ul>
     </div>
   );

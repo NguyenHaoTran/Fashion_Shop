@@ -1,0 +1,162 @@
+// @import "./news.scss";
+
+// Small Devices (Tablets, 768px and up)
+@media (max-width: 768px) {
+  .News {
+    padding-top: 80px;
+
+    .banner {
+      padding: 60px 0;
+      .p_banner {
+        font-size: 1.8rem;
+      }
+      .selection {
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .news_contents {
+      flex-direction: column;
+      width: 90%;
+      .contents {
+        width: 100%;
+        margin: 0;
+
+        .news-item {
+          h3 {
+            font-size: 1.2rem;
+            padding: 0 15px;
+          }
+
+          p {
+            padding: 0 20px 30px 20px;
+          }
+
+          .end {
+            padding: 0 15px;
+          }
+        }
+      }
+
+      .sideBar {
+        width: 100%;
+        margin-top: 30px;
+
+        .category,
+        .newBlog {
+          margin-top: 50px;
+          .filterButtons button {
+            width: 100%;
+            margin: 5px 0;
+          }
+        }
+
+        .item {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .texts {
+            margin-left: 0;
+            margin-top: 10px;
+            b {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra Small Devices (Phones, 480px and up)
+@media (max-width: 480px) {
+  .News {
+    padding-top: 60px;
+
+    .banner {
+      padding: 40px 0;
+      .p_banner {
+        font-size: 1.5rem;
+      }
+      .selection {
+        a {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .news_contents {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      // Re-arrange sidebar to appear first for easier navigation
+      .sideBar {
+        width: 100%;
+        margin-top: 0;
+        order: 1; // Sidebar appears first
+
+        .category,
+        .newBlog {
+          margin-top: 20px;
+
+          .filterButtons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+
+            button {
+              width: 100%;
+              padding: 8px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        .item {
+          flex-direction: row; // Display items in a row
+          align-items: center;
+          img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+          }
+          .texts {
+            margin-left: 0;
+            margin-top: 0;
+            b {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      // Content items follow the sidebar for better organization
+      .contents {
+        order: 2; // Contents follow the sidebar
+        width: 100%;
+        margin-top: 20px;
+
+        .news-item {
+          padding: 10px;
+          h3 {
+            font-size: 1rem;
+            padding: 0 10px;
+          }
+
+          p {
+            padding: 0 15px 20px 15px;
+          }
+
+          .end {
+            padding: 0 10px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
