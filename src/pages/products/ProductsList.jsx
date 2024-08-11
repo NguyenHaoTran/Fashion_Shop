@@ -2,9 +2,8 @@
 import "./productsList.scss";
 import Card from "./Card";
 
-const ProductsList = ({ products }) => {
+const ProductsList = ({ products, onCardClick, addToCart }) => {
 
-  
 
   return (
     <div className="products_list">
@@ -14,6 +13,8 @@ const ProductsList = ({ products }) => {
           imgUrl={product.imgUrl}
           name={product.name}
           price={product.price}
+          onClick={() => onCardClick(product)} // Handle card click
+          addToCart={addToCart}  // Truyền hàm addToCart vào Card
         />
       ))}
     </div>

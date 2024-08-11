@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import "./products.scss";
 import ProductsList from "./ProductsList";
 import FilterBar from "./filter/FilterBar";
-// json
+import ProductDetail from "../products/ProductsDetail.jsx"; // Import the new ProductDetail component
 import allProducts from "../../Data/products.json";
 
 const Products = () => {
@@ -11,6 +11,7 @@ const Products = () => {
   const [colorFilter, setColorFilter] = useState("");
   const [sizeFilter, setSizeFilter] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null); // New state for selected product
 
   const filterProducts = useCallback(() => {
     let filtered = allProducts;
@@ -38,13 +39,19 @@ const Products = () => {
     filterProducts();
   }, [filterProducts]);
 
-  // clearfilter
+  // clear filter
   const handleClearFilters = () => {
     setCategoryFilter("");
     setPriceFilter([320000, 9000000]);
     setColorFilter("");
     setSizeFilter("");
     setFilteredProducts(allProducts); // Reset to show all products
+  };
+
+  // Function to handle adding to cart
+  const addToCart = (product) => {
+    // Add logic to handle adding the product to the cart
+    console.log("Added to cart:", product);
   };
 
   return (
@@ -68,9 +75,7 @@ const Products = () => {
             />
           </div>
 
-          <button className="btn_clear" onClick={handleClearFilters}>
-            Clear Filters
-          </button>
+          <button onClick={handleClearFilters}>Mặc định</button>
         </div>
 
         <div className="products_view">
@@ -78,10 +83,22 @@ const Products = () => {
             <b>DANH SÁCH SẢN PHẨM</b>
           </div>
           <div className="products_list">
-            <ProductsList products={filteredProducts} />
+            <ProductsList
+              products={filteredProducts}
+              onCardClick={setSelectedProduct} // Pass down the onCardClick handler
+            />
           </div>
         </div>
       </div>
+
+      {/* Render ProductDetail if a product is selected */}
+      {selectedProduct && (
+        <ProductDetail
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          addToCart={addToCart}
+        />
+      )}
     </div>
   );
 };
