@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./cart.scss";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-const Cart = ({ cartItems, onRemove }) => {
+const Cart = ({ cartItems, removeFromCart }) => {
   const [isCartOpen, setCartOpen] = useState(false);
 
   const toggleCart = () => {
@@ -15,20 +15,23 @@ const Cart = ({ cartItems, onRemove }) => {
         <ShoppingCartOutlinedIcon />
       </div>
       {isCartOpen && (
-        <div className={`cart-sidebar ${isCartOpen ? 'open' : ''}`}>
-          <button className="close-btn" onClick={toggleCart}>X</button>
-          <h2>Giỏ hàng của bạn</h2>
-          <div className="cart-items">
+        <div className={`cart-sidebar ${isCartOpen ? "open" : ""}`}>
+          <button className="close-btn" onClick={toggleCart}>
+            X
+          </button>
+          {/* Cart */}
+          <div className="cart">
+            <h2>Giỏ hàng</h2>
             {cartItems.length === 0 ? (
               <p>Giỏ hàng trống</p>
             ) : (
-              cartItems.map((item, index) => (
-                <div key={index} className="cart-item">
+              cartItems.map((item) => (
+                <div key={item.id} className="cart-item">
                   <img src={item.imgUrl} alt={item.name} />
                   <div>
-                    <p>{item.name}</p>
-                    <p>{item.price} VND</p>
-                    <button onClick={() => onRemove(item.id)}>Xóa</button>
+                    <h4>{item.name}</h4>
+                    <p>{item.price} VNĐ</p>
+                    <button onClick={() => removeFromCart(item.id)}>Xóa</button>
                   </div>
                 </div>
               ))

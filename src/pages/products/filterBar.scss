@@ -1,0 +1,32 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+
+  select,
+  input[type="range"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}
