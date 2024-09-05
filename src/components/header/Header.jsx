@@ -52,6 +52,7 @@ const Header = () => {
           </button>
           <Wishlist />
           <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
+          
         </div>
       </header>
       <Search isVisible={isSearchVisible} onClose={closeSearch} />
