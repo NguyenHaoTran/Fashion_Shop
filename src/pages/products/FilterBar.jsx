@@ -1,6 +1,32 @@
 import { useState } from 'react';
 import './filterBar.scss';
 
+const Dropdown = ({ label, options, selectedOption, onSelect }) => {
+  const [open, setOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setOpen(!open);
+  };
+
+  const handleSelect = (option) => {
+    onSelect(option);
+    setOpen(false); // Đóng menu sau khi chọn
+  };
+
+  return (
+    <div className={`dropdown ${open ? 'open' : ''}`}>
+      <button onClick={toggleDropdown}>{selectedOption || label}</button>
+      <ul className="dropdown-menu">
+        {options.map((option, index) => (
+          <li key={index} onClick={() => handleSelect(option)}>
+            {option}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 const FilterBar = ({ onFilter }) => {
   const [category, setCategory] = useState('');
   const [color, setColor] = useState('');
@@ -16,29 +42,39 @@ const FilterBar = ({ onFilter }) => {
     });
   };
 
+  const handleClearFilters = () => {
+    setCategory('');
+    setColor('');
+    setSize('');
+    setPriceRange([0, 2000000]);
+    onFilter({
+      category: '',
+      color: '',
+      size: '',
+      priceRange: [0, 2000000],
+    });
+  };
+
   return (
     <div className="filter-bar">
-      <select onChange={(e) => setCategory(e.target.value)} value={category}>
-        <option value="">Chọn danh mục</option>
-        <option value="Đồ nam">Đồ nam</option>
-        <option value="Giày">Giày</option>
-        <option value="Túi">Túi</option>
-        <option value="Phụ kiện">Phụ kiện</option>
-      </select>
-      <select onChange={(e) => setColor(e.target.value)} value={color}>
-        <option value="">Chọn màu sắc</option>
-        <option value="xanh">Xanh</option>
-        <option value="trắng">Trắng</option>
-        <option value="đen">Đen</option>
-        <option value="xám">Xám</option>
-        <option value="vàng">Vàng</option>
-      </select>
-      <select onChange={(e) => setSize(e.target.value)} value={size}>
-        <option value="">Chọn kích thước</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-      </select>
+      <Dropdown
+        label="Chọn danh mục"
+        options={['Đồ nam', 'Giày', 'Túi', 'Phụ kiện']}
+        selectedOption={category}
+        onSelect={(option) => setCategory(option)}
+      />
+      <Dropdown
+        label="Chọn màu sắc"
+        options={['Xanh', 'Trắng', 'Đen', 'Xám', 'Vàng']}
+        selectedOption={color}
+        onSelect={(option) => setColor(option)}
+      />
+      <Dropdown
+        label="Chọn kích thước"
+        options={['S', 'M', 'L']}
+        selectedOption={size}
+        onSelect={(option) => setSize(option)}
+      />
       <input
         type="range"
         min="0"
@@ -48,6 +84,9 @@ const FilterBar = ({ onFilter }) => {
       />
       <span>{priceRange[1]} VNĐ</span>
       <button onClick={handleFilter}>Lọc</button>
+      <button className="clear-filters" onClick={handleClearFilters}>
+        Xoá mọi filter
+      </button>
     </div>
   );
 };
