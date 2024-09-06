@@ -1,6 +1,7 @@
 import "./nav.scss";
+import "../../../repsonsive/responsiveHeader.scss"
 import { Link } from "react-router-dom";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Nav = () => {
   return (
@@ -17,11 +18,11 @@ const Nav = () => {
             <div className="btn_sub_menu">
               <Link to="/products">
                 SẢN PHẨM
-                <span>
+                {/* <span>
                   <KeyboardArrowDownIcon />
-                </span>
+                </span> */}
               </Link>
-              <div className="sub_menu">
+              {/* <div className="sub_menu">
                 <div className="sub_menu_items">
                   <div className="BoSuuTap">
                     <ul>
@@ -95,7 +96,7 @@ const Nav = () => {
                     <img src="/1x1_menu.webp" alt="menuimg" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </li>
           <li>

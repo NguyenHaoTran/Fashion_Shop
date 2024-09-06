@@ -1,4 +1,5 @@
 import "./blackLine.scss";
+import "../../../repsonsive/responsiveHeader.scss"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const BlackLine = () => {
