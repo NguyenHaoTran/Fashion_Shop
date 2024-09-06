@@ -1,7 +1,7 @@
 // import React from 'react';
 import "./productsDetail.scss";
 
-const ProductsDetail = ({ product, onClose, addToCart }) => {
+const ProductsDetail = ({ product, addToCart }) => {
   return (
     <div className="product-detail">
       <div className="left">

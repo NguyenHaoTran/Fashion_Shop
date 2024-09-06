@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import ProductsList from "./ProductsList";
 import ProductsDetail from "./ProductsDetail";
 import FilterBar from "./FilterBar";
@@ -47,9 +47,23 @@ const Products = () => {
     setCartItems(cartItems.filter((item) => item.id !== id));
   };
 
+  // Effect để thêm hoặc gỡ lớp no-scroll khi modal mở ra
+  useEffect(() => {
+    if (selectedProduct) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Cleanup function để gỡ lớp khi component bị hủy
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [selectedProduct]);
+
   return (
     <>
-    <div className="banner">
+      <div className="banner">
         <div className="selection">
           <a href="/">TRANG CHỦ</a>
           <span>|</span>
@@ -57,40 +71,41 @@ const Products = () => {
         </div>
         <p className="p_banner">SẢN PHẨM</p>
       </div>
-    <div className="products-container">
-      <div className="filterBar">
-        <FilterBar onFilter={handleFilter} />
-      </div>
-      <div className="products-content">
-        <ProductsList
-          products={filteredProducts || []}
-          onProductClick={setSelectedProduct}
-          addToCart={addToCart}
-        />
-        
-      </div>
-      {/* <div className="cart">
+      <div className="products-container">
+        <div className="filterBar">
+          <FilterBar onFilter={handleFilter} />
+        </div>
+        <div className="products-content">
+          <ProductsList
+            products={filteredProducts || []}
+            onProductClick={setSelectedProduct}
+            addToCart={addToCart}
+          />
+        </div>
+        {/* <div className="cart">
         <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       </div>
        */}
-      {/* detail_popup */}
-      {selectedProduct && (
-        <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
+        {/* detail_popup */}
+        {selectedProduct && (
           <div
-            className="modal-content"
-            onClick={(e) => e.stopPropagation()} // Để ngăn chặn sự kiện click đóng popup khi click vào bên trong modal
+            className="modal-overlay"
+            onClick={() => setSelectedProduct(null)}
           >
-            <ProductsDetail
-              product={selectedProduct}
-              onClose={() => setSelectedProduct(null)}
-              addToCart={addToCart}
-            />
+            <div
+              className="modal-content"
+              onClick={(e) => e.stopPropagation()} // Để ngăn chặn sự kiện click đóng popup khi click vào bên trong modal
+            >
+              <ProductsDetail
+                product={selectedProduct}
+                onClose={() => setSelectedProduct(null)}
+                addToCart={addToCart}
+              />
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
     </>
-    
   );
 };
 

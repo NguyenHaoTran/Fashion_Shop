@@ -4,7 +4,7 @@ import Nav from "./nav/Nav";
 import Search from "./search/Search";
 import Cart from "../header/cart/Cart.jsx"; 
 // import Cart from '../../pages/products/Cart.jsx'
-import Wishlist from "../../pages/wishlist/Wishlist";
+// import Wishlist from "../../pages/wishlist/Wishlist";
 import BlackLine from "./black_line/BlackLine";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { useState, useEffect } from "react";
@@ -50,7 +50,7 @@ const Header = () => {
             <SearchOutlinedIcon className="search-icon" />
             <Search />
           </button>
-          <Wishlist />
+          {/* <Wishlist /> */}
           <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
           
         </div>
