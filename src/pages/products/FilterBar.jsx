@@ -85,7 +85,7 @@ const FilterBar = ({ onFilter }) => {
       <span>{priceRange[1]} VNĐ</span>
       <button onClick={handleFilter}>Lọc</button>
       <button className="clear-filters" onClick={handleClearFilters}>
-        Xoá mọi filter
+        Xoá bộ lọc
       </button>
     </div>
   );
