@@ -2,7 +2,7 @@
   "name": "fashion-shop",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nguyenhaotran.github.io/Fashion_Shop/",
+  "homepage": "https://nguyenhaotran.github.io/Fashion_Shop/home",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
@@ -12,7 +12,6 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,11 +21,11 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
-          <Route path="/Fashion_Shop/home" element={<Home />} />
-          <Route path="/Fashion_Shop/about" element={<About />} />
-          <Route path="/Fashion_Shop/products" element={<Products />} />
-          <Route path="/Fashion_Shop/news" element={<News />} />
-          <Route path="/Fashion_Shop/contact" element={<Contact />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />

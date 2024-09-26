@@ -10,7 +10,7 @@ export const News = () => {
 
   useEffect(() => {
     // Fetch data from the JSON file
-    fetch("/Fashion_Shop/home/src/Data/news.json")
+    fetch("/src/Data/news.json")
       .then((response) => response.json())
       .then((data) => setNewsData(data))
       .catch((error) => console.error("Error fetching data:", error));
