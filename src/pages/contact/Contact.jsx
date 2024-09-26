@@ -3,7 +3,6 @@ import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
 const Contact = () => {
-
   useEffect(() => {
     const sr = ScrollReveal({
       reset: true, // Đảm bảo animation sẽ luôn thực hiện khi cuộn lại
@@ -40,7 +39,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="img">
-          <img src="1x1_img_1.webp" alt="" />
+          <img src="/Fashion_Shop/home/assets/1x1_img_1.webp" alt="" />
         </div>
       </div>
     </div>

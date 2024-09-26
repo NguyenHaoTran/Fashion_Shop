@@ -1,5 +1,5 @@
 import "./news.scss";
-import "../../repsonsive/responsiveNews.scss"
+import "../../repsonsive/responsiveNews.scss";
 import { useState, useEffect } from "react";
 
 export const News = () => {
@@ -10,7 +10,7 @@ export const News = () => {
 
   useEffect(() => {
     // Fetch data from the JSON file
-    fetch("/src/Data/news.json")
+    fetch("/Fashion_Shop/home/src/Data/news.json")
       .then((response) => response.json())
       .then((data) => setNewsData(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -55,7 +55,11 @@ export const News = () => {
         <div className="contents">
           {/* item */}
           {filteredNewsData.map((item) => (
-            <div key={item.id} className="news-item" onClick={() => openPopup(item)}>
+            <div
+              key={item.id}
+              className="news-item"
+              onClick={() => openPopup(item)}
+            >
               <img src={item.imgUrl} alt={item.name} />
               <h3>{item.name}</h3>
               <p>{item.description}</p>
@@ -115,7 +119,11 @@ export const News = () => {
             <h3>BÀI VIẾT MỚI NHẤT</h3>
             {/* items */}
             {newsData.map((item) => (
-              <div key={item.id} className="item" onClick={() => openPopup(item)}>
+              <div
+                key={item.id}
+                className="item"
+                onClick={() => openPopup(item)}
+              >
                 <div className="imgs">
                   <img src={item.imgUrl} alt="itemImg" />
                 </div>
